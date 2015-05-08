@@ -1,6 +1,6 @@
 FROM maven
 WORKDIR /opt
-RUN git clone https://github.com/ajanata/PretendYoureXyzzy.git
+RUN git clone https://github.com/generalpurposecomputer/PretendYoureXyzzy.git
 WORKDIR PretendYoureXyzzy
 RUN cp build.properties.example build.properties
 RUN mvn clean package war:exploded
